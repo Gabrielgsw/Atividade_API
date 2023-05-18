@@ -20,6 +20,7 @@ namespace Exo.WebApi.Repositories
 
         }
 
+        
         public List<Usuario> Listar()
         {
             return _context.Usuarios.ToList();
@@ -56,6 +57,8 @@ namespace Exo.WebApi.Repositories
             _context.Usuarios.Remove(usuarioBuscado);
             _context.SaveChanges();
         }
+
+               
 
     }
 }
